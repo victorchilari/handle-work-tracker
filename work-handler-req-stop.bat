@@ -1,0 +1,1 @@
+node minified.js stop

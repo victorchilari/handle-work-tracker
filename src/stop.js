@@ -19,14 +19,14 @@ const start = async () => {
 
 	setTimeout(async () => {
 		const timestamp = () => new Date().toUTCString().replaceAll(':', '_');
-		await browser.saveScreenshot(`./assets/${timestamp}_before.png`);
+		await browser.saveScreenshot(`./assets/${timestamp()}_before.png`);
 
 		const btn_track = await browser.$(
 			'img[src="/bee/VAADIN/themes/bee/img/stop-icon.png"]'
 		);
 		await btn_track.click();
 
-		await browser.saveScreenshot(`./assets/${timestamp}.png`);
+		await browser.saveScreenshot(`./assets/${timestamp()}.png`);
 	}, 6000);
 };
 

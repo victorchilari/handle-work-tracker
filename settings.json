@@ -1,0 +1,18 @@
+{
+	"url": "http://10.24.48.120/bee/",
+	"inputs": [
+		{
+			"id": "input[name='j_username']",
+			"value": "crm0260"
+		},
+		{
+			"id": "input[name='j_password']",
+			"value": "Cedacri1"
+		}
+	],
+	"buttons": {
+		"login": "#submit",
+		"start": "img[src='/bee/VAADIN/themes/bee/img/start-icon.png']",
+		"stop": "img[src='/bee/VAADIN/themes/bee/img/stop-icon.png']"
+	}
+}
