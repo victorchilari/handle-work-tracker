@@ -1,5 +1,5 @@
 # handle-work-tracker
-Automate time tracking buy creating JS code that open tracker's page, auth, and press button to start or to end. That features are running buy .bat files.
+Automate time tracking buy creating JS code that open tracker's page, auth, and press button to start or to end. That features are running by .bat files.
 
 Also it take screenshots before and after press track button. (At the moment its not necessary because i forgot to save code that close browser after script...)
 
