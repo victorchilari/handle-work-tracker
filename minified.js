@@ -18,7 +18,7 @@ import * as cfg from './settings.json';
 	await sumbit.click();
 
 	setTimeout(async () => {
-		const timestamp = () => new Date().toUTCString().replaceAll(':', '_');
+		const timestamp = () => new Date().toString().substring(0,24).replaceAll(':', '_');
 		const takeSceenshot = (suffix) => await browser.saveScreenshot(`./assets/${timestamp() + suffix}.png`);
 		
 		takeSceenshot('_before');

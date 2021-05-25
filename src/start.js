@@ -18,7 +18,7 @@ const start = async () => {
 	await sumbit.click();
 
 	setTimeout(async () => {
-		const timestamp = () => new Date().toUTCString().replaceAll(':', '_');
+		const timestamp = () => new Date().toString().substring(0, 24).replaceAll(':', '_');
 		await browser.saveScreenshot(`./assets/${timestamp()}_before.png`);
 
 		const btn_track = await browser.$(
